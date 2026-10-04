@@ -226,10 +226,10 @@ export default function Home() {
             </div>{" "}
             <div className="absolute -right-3 top-10 hidden rounded-2xl bg-white p-4 shadow-xl sm:block">
               {" "}
-              <div className="text-2xl">🐔</div>{" "}
+              <div className="text-2xl">🥦</div>{" "}
               <p className="mt-1 text-xs font-semibold text-[#49634d]">
                 {" "}
-                মুরগি পালন{" "}
+                সবজি চাষ{" "}
               </p>{" "}
             </div>{" "}
             <div className="absolute -bottom-5 -left-3 hidden rounded-2xl bg-white p-4 shadow-xl sm:block">
@@ -297,7 +297,7 @@ export default function Home() {
               description="মাটির গুণাগুণ ও মৌসুম বিবেচনায় বিভিন্ন ধরনের শাক-সবজি চাষ।"
             />
             <ActivityCard
-              image="/images/fish.jpg"
+              image="/images/fishcatch.jpg"
               title="মৎস্য চাষ"
               description="পুকুরের সঠিক ব্যবস্থাপনার মাধ্যমে মাছ চাষ ও পরিচর্যা।"
             />
@@ -333,30 +333,160 @@ export default function Home() {
           </div>{" "}
         </div>{" "}
       </section>{" "}
-      {/* Contact CTA */}{" "}
-      <section id="contact" className="bg-[#244c2d] py-20 text-white sm:py-24">
-        {" "}
-        <div className="mx-auto max-w-4xl px-5 text-center sm:px-8">
-          {" "}
-          <div className="text-5xl">🌿</div>{" "}
-          <h2 className="mt-5 text-3xl font-bold sm:text-4xl">
-            {" "}
-            ডাঙী ফার্মের সাথে থাকুন{" "}
-          </h2>{" "}
-          <p className="mx-auto mt-4 max-w-2xl leading-8 text-[#d3e2d2]">
-            {" "}
-            আমাদের কৃষি কার্যক্রম, নতুন উদ্যোগ এবং ফার্মের বিভিন্ন আপডেট
-            সম্পর্কে জানতে আমাদের সাথে যোগাযোগ করুন।{" "}
-          </p>{" "}
-          <a
-            href="mailto:info@dangifarm.com"
-            className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-white px-7 font-semibold text-[#2f6b3b] transition hover:bg-[#edf3ea]"
-          >
-            {" "}
-            যোগাযোগ করুন{" "}
-          </a>{" "}
-        </div>{" "}
-      </section>{" "}
+      {/* Contact Section */}
+      <section id="contact" className="bg-[#f1f5ed] py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+          {/* Section Heading */}
+          <div className="mx-auto mb-12 max-w-2xl text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#5c815f]">
+              যোগাযোগ
+            </p>
+
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#25442b] sm:text-4xl">
+              আমাদের সাথে যোগাযোগ করুন
+            </h2>
+
+            <p className="mt-4 leading-8 text-[#6d786e]">
+              ডাঙী ফার্মে আসতে, আমাদের কার্যক্রম সম্পর্কে জানতে অথবা যেকোনো
+              প্রয়োজনে যোগাযোগ করুন।
+            </p>
+          </div>
+
+          {/* Contact Details + Map */}
+          <div className="grid gap-8 lg:grid-cols-2">
+            {/* Contact Information */}
+            <div className="rounded-3xl border border-[#dce6d9] bg-white p-6 shadow-sm sm:p-8">
+              <h3 className="text-2xl font-bold text-[#25442b]">ডাঙী ফার্ম</h3>
+
+              <p className="mt-2 text-sm leading-7 text-[#718071]">
+                আমাদের ঠিকানা ও যোগাযোগের তথ্য
+              </p>
+
+              <div className="mt-8 space-y-6">
+                {/* Address */}
+                <div className="flex gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eaf2e5] text-xl">
+                    📍
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-[#315337]">ফার্মের ঠিকানা</h4>
+
+                    <p className="mt-2 text-sm leading-7 text-[#718071]">
+                      গ্রাম: খাল বাটবিলা
+                      <br />
+                      রাস্তা: বাটবিলা-দূর্বাডাঙ্গা রাস্তা (ডাঙী)
+                      <br />
+                      উপজেলা: মণিরামপুর
+                      <br />
+                      জেলা: যশোর, বাংলাদেশ
+                    </p>
+                  </div>
+                </div>
+
+                {/* Phone */}
+                <div className="flex gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eaf2e5] text-xl">
+                    📞
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-[#315337]">মোবাইল নম্বর</h4>
+
+                    <a
+                      href="tel:+8801984474356"
+                      className="mt-2 inline-block text-sm font-medium text-[#4f7a54] transition hover:text-[#244c2d]"
+                    >
+                      ০১৯৮৪-৪৭৪৩৫৬
+                    </a>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eaf2e5] text-xl">
+                    ✉️
+                  </div>
+
+                  <div className="min-w-0">
+                    <h4 className="font-bold text-[#315337]">ইমেইল</h4>
+
+                    <a
+                      href="mailto:dangi.khamar@gmail.com"
+                      className="mt-2 inline-block break-all text-sm font-medium text-[#4f7a54] transition hover:text-[#244c2d]"
+                    >
+                      dangi.khamar@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contact Buttons */}
+              <div className="mt-8 flex flex-col gap-3 border-t border-[#e5ebe2] pt-6 sm:flex-row">
+                <a
+                  href="tel:+8801984474356"
+                  className="inline-flex h-12 flex-1 items-center justify-center rounded-full bg-[#2f6b3b] px-5 text-sm font-semibold text-white transition hover:bg-[#24552e]"
+                >
+                  📞 কল করুন
+                </a>
+
+                <a
+                  href="mailto:dangi.khamar@gmail.com"
+                  className="inline-flex h-12 flex-1 items-center justify-center rounded-full border border-[#cdddc9] bg-white px-5 text-sm font-semibold text-[#315337] transition hover:bg-[#edf3ea]"
+                >
+                  ✉️ ইমেইল করুন
+                </a>
+              </div>
+            </div>
+
+            {/* Google Maps */}
+            <div className="overflow-hidden rounded-3xl border border-[#dce6d9] bg-white shadow-sm">
+              <div className="flex items-center justify-between gap-3 p-5 sm:p-6">
+                <div>
+                  <h3 className="text-xl font-bold text-[#25442b]">
+                    আমাদের অবস্থান
+                  </h3>
+
+                  <p className="mt-1 text-sm text-[#718071]">মণিরামপুর, যশোর</p>
+                </div>
+
+                <span className="text-2xl">🗺️</span>
+              </div>
+
+              <div className="h-[300px] bg-[#eaf2e5] sm:h-[380px]">
+                <iframe
+                  title="Dangi Farm Google Maps Location"
+                  src="https://maps.google.com/maps?q=22.9473156,89.2687244&t=k&z=17&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
+              </div>
+
+              <div className="p-5 sm:p-6">
+                <p className="text-sm leading-7 text-[#718071]">
+                  Google Maps-এ ডাঙী ফার্মের অবস্থান ও যাওয়ার দিকনির্দেশনা দেখতে
+                  নিচের বাটনে ক্লিক করুন।
+                </p>
+
+                <a
+                  href="https://maps.app.goo.gl/ovqWDm2hAYwuZUF4A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#2f6b3b] px-5 text-sm font-semibold text-white transition hover:bg-[#24552e]"
+                >
+                  <span>📍</span>
+                  Google Maps-এ দেখুন
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Footer */}{" "}
       <footer className="bg-[#183720] py-7 text-center text-sm text-[#b9cbb8]">
         {" "}
